@@ -1,0 +1,546 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+*{
+  padding: 0px;
+  margin: 0px;
+  outline-style: none;
+  text-decoration: none;
+  list-style: none;
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+/*************************/
+.discription{
+  text-align: center;
+  margin-bottom: 60px;
+  h1{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  p{
+    margin: 15px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: rgb(44, 43, 43);
+  }
+}
+.freepik{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(117, 109, 109);
+  a{
+    color: rgb(117, 109, 109);
+  }
+}
+.social{
+  margin-top: 25px;
+  span{
+    font-size: 33px;
+    margin-right: 10px;
+  }
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+}
+.profile,.info,.doing,.work,.slider,.contact{
+  padding: 80px 0px;
+}
+/***************************header***************/
+header{
+  background-image: url(../assets/bk_header.jpg);
+  .grid{
+    .header_info{
+      grid-column: span 3;
+      h3{
+        p.ball{
+          display: inline-block;
+          min-width: 80px;
+          min-height: 80px;
+          background-color: #ec563d;
+          border-radius: 50%;
+          margin-top: 70px;
+          margin-bottom: 30px;
+        }
+      }
+      h1{
+        font-size: 92px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;        
+        line-height: 1;
+      }
+      p{
+        margin: 20px 0px;
+        font-weight: 600;
+        font-family: sans-serif;
+        font-size: 14px;
+        color: rgb(24, 23, 23);
+        line-height: 1.7;
+        letter-spacing: 1.5;
+      }
+      button{
+        background-color: black;
+        color: white;
+        padding: 15px 50px;
+        border:0;
+        font-size: 17px;
+      }
+    }
+    .header_photo{
+      grid-column: span 3;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+/************profile**********/
+.profile{
+  .content{ 
+    padding-top: 50px;
+    .about{
+      grid-column: span 2;
+      margin-top: 30px;
+      h1{
+        font-size: 27px;
+        font-family: sans-serif;
+      }
+      p{
+        margin: 30px 0px;
+        line-height: 2;
+        font-size: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+    }
+    .about_photo{
+      grid-column: span 2;
+      img{
+        display: block;
+        max-width: 80%;
+        margin: auto;
+        border-radius: 50%;
+      }
+    }
+    .details{
+      grid-column: span 2;
+      h1{
+        font-size: 27px;
+        font-family: sans-serif;
+        margin-bottom: 24px;
+      }
+      .deta_text{
+        .prop{
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 14px;
+          color: black;
+          font-weight: 600;
+        }
+        .prop_text{
+          color: rgb(160, 153, 153);
+          margin: 17px 0px;
+          font-size: 15px;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        }
+      }
+    }
+  }
+}
+/****************INFO*************/
+.info{
+  .container{
+    >h1{
+      font-size: 47px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      width: fit-content;
+      border-bottom: 10px solid #ec563d;
+      margin-bottom: 30px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    >p{
+      width: 75%;
+      font-size: 18px;
+      line-height: 1.8;
+      letter-spacing: 1.7;
+      margin-bottom: 30px;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    >p:last-of-type{
+      width: 75%;
+      line-height: 1.7;
+      font-size: 18px;
+      letter-spacing: 1.4;
+      font-weight: 500;
+    }
+    .info_img{
+      width: 90%;
+      img{
+        max-width: 100%;
+      }
+    }
+    .info_discription{
+      display: grid;
+      grid-template-columns: repeat(6,1fr);
+      .text_right{
+        grid-column: span 3;
+        margin-right: 50px;
+        >p{
+          font-size: 16px;
+          letter-spacing: 1.6;
+          line-height: 2;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+      }
+      .info_contact{
+        height: fit-content;
+        grid-column-end: 6;
+        background-color: #ec563d;
+        padding: 50px 35px;
+        color: white;
+        margin-top: -90px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+        h2{
+          font-size: 21px;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          margin: 20px 0px;
+          letter-spacing: 2;
+        }
+        h3{
+          letter-spacing: 1.5;
+          font-size: 16px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h3:hover{
+          cursor: pointer;
+          color: rgb(228, 222, 222);
+        }
+      }
+    }
+  }
+}
+/**************doing*********/
+.doing{
+  background-color: #ddd;
+  .container{
+    .grid{
+      grid-gap: 80px;
+      .box{
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        .icon{
+          height: 42px;
+          width: 26px;
+          font-size: 26px;
+          margin-right: 20px;
+          background-color: #ec563d;
+          color: white;
+          border-radius: 50%;
+          padding: 17px;
+          padding-bottom: 0px;
+        }
+        .text{
+          grid-column: span 5;
+          h2{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            letter-spacing: 2.5;
+            color: #555c66;
+          }
+          p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.5;
+            color: rgb(51, 48, 48);
+            font-size: 1.2em;            
+          }
+        }
+      }
+    }
+  }
+}
+/****************work*************/
+.work{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 100px;
+  .container:first-of-type{
+    margin-top: 70px;
+    grid-gap: 40px 30px;
+    div{
+      grid-column: span 2 ;
+      height: 350px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    div:nth-of-type(1){
+      background-image: url(../assets/work1.jpg);
+    }
+    div:nth-of-type(2){
+      background-image: url(../assets/work2.jpg);
+    }
+    div:nth-of-type(3){
+      background-image: url(../assets/work3.jpg);
+    }
+    div:nth-of-type(4){
+      background-image: url(../assets/work4.jpg);
+    }
+    div:nth-of-type(5){
+      background-image: url(../assets/work5.jpg);
+    }
+    div:nth-of-type(6){
+      background-image: url(../assets/work6.jpg);
+    }
+  }
+  .container:last-of-type{
+    direction: rtl;
+    >div{
+      position: relative;
+      z-index: 10;
+      direction: ltr;
+      max-width: 320px;
+      padding: 20px 40px;
+      background-color: white;
+      margin-top: -100px;
+      margin-right: 3%;
+      >h1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 33px;
+      }
+      >p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 15px 0px;
+        line-height: 1.5 ;
+        letter-spacing: 1;
+        font-size: 17px;
+      }
+      button{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: 20px 0px;
+        padding: 15px 25px;
+        font-size: 18px;
+        border: 0px;
+        background-color: rgb(34, 33, 33);
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.work::before{
+  content: "";
+  position: absolute;
+  height: 94%;
+  background-color: #ec563d;
+  width: 350px ;
+  margin-left: 20%;
+  top: 100;
+  left: 0;
+  z-index: -10;
+}
+/***********slider**********/
+.slider{
+  padding: 100px 0px;
+  margin-bottom: 100px;
+  text-align: center;
+  background-color: #ddd;
+  .container{
+    .splide{
+      .splide__arrow{
+        width: 2.5em;
+        height: 2.5em;
+      }
+      .splide__pagination{
+        bottom: -2.5em;
+      }
+      .splide__track{
+        .splide__list{
+          .splide__slide{
+            img{
+              display: block;
+              width: 175px;
+              height: 175px;
+              margin: auto;
+              border-radius: 50%;
+              border: 7px solid #ec563d;
+              margin-bottom: 50px;
+            }
+            >p{
+              width: 60%;
+              margin: auto;
+              font-size: 18px;
+              letter-spacing: 2.5;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            h2{
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              margin: 30px 0px;
+              letter-spacing: 5;
+              font-size: 27px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*************CONTACT********************/
+.contact{
+  background-color:#292e33;
+  color: white;
+  .container{
+    gap: 90px;
+    .left{
+      grid-column: span 3;
+      h3{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-bottom: 20px ;
+        font-size: 18px;
+        letter-spacing: 3;
+      }
+      h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-bottom: 30px;
+        font-size: 28px;
+        letter-spacing: 2;
+      }
+      p{
+        line-height: 1.6;
+        font-size: 18px;
+        letter-spacing: 2;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 20px 0px;
+      }
+    }
+    .right{
+      grid-column: span 3;
+      form{
+        input{
+          display: block;
+          width: 98%;
+          padding: 2%;
+          margin-bottom:15px ;
+          font-size: 1em;
+        }
+        textarea{
+          display: block;
+          width: 98%;
+          height: 220px;
+          margin-bottom: 15px;
+          outline-style: none;
+          font-size: 1.5em;
+          padding:2%;
+        }
+        button{
+          padding: 13px 30px;
+          border: 1px solid grey;
+          color: white;
+          font-size: 1em;
+          cursor: pointer;
+          box-shadow: 2px 2px 1px  0px grey;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+/*********************mediaQuery of MOBILES***********/
+@media (min-width:100px) and (max-width:768px) {
+  header .grid .header_info{
+    grid-column: 1/7;
+    h1{
+      font-size: 63px;
+    }
+  }
+  header .grid .header_photo{
+    grid-column: span 6;
+  }
+  .profile .content .about, .profile .content .details{
+    grid-column: span 6;
+  }
+  .profile .content .about_photo{
+    grid-column: 2/6;
+    margin: 20px 0px;
+  }
+  .info .container > p , .info .container > p:last-of-type{
+    width: 100%;
+  }
+  .info .container .info_discription .text_right{
+    grid-column: span 5;
+  }
+  .info .container .info_discription .info_contact{
+    width: fit-content;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .doing .container .grid {
+    grid-gap: 80px 0px;
+  }
+  .doing .container .grid .box{
+    grid-column: span 6;
+  }
+  .work .container:first-of-type div{
+    grid-column: span 6;
+  }
+  .work .container:last-of-type > div{
+    margin-top: 100px;
+    margin-right: 0px;
+  }
+  .work::before{
+    height: 100%;
+    margin-left: 15%;
+  }
+  .slider .container{
+    width: 95%;
+  }
+  .contact .container{
+    gap: 50px 0px;
+  }
+  .contact .container .left , .contact .container .right{
+    grid-column: span 6;
+  }
+}
+/*********************mediaQuery of Tablets***********/
+@media (min-width:769px) and (max-width:992px) {
+  header .grid .header_info{
+    grid-column: 1/6;
+  }
+  header .grid .header_photo{
+    grid-column: 2/6;
+  }
+  .profile .content .about{
+    grid-column: span 3;
+  }
+  .profile .content .about_photo{
+    grid-column: span 3;
+  }
+  .profile .content .details{
+    margin-top: 35px;
+    grid-column: span 3;
+  }
+  .info .container .info_discription .text_right{
+    grid-column: span 5;
+  }
+  .info .container .info_discription .info_contact{
+    grid-column-start: unset;
+    grid-column-end: 7;
+  }
+  .doing .container .grid .box{
+    grid-column: span 3;
+  }
+  .work .container:first-of-type div{
+    grid-column: span 3;
+  }
+  .slider .container{
+    width: 90%;
+  }
+  .contact .container{
+    gap: 15px;
+  }
+}
